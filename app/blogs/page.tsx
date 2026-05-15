@@ -4,7 +4,9 @@ import { useFilter } from "../actions/blogs"
 
 const Blogs = async ({searchParams}: {searchParams: Promise<{filter?: string}>}) => {
   const { filter } = await searchParams
-  const blogs = getBlogs().sort((a, b) => b.likes- a.likes)
+  const allBlogs = await getBlogs()
+
+  const blogs = allBlogs.sort((a, b) => b.likes- a.likes)
 
   const blogsShow = filter
     ? blogs.filter( f => f.title.toLowerCase().includes(filter.toLowerCase())).sort((a, b) => b.likes- a.likes)
