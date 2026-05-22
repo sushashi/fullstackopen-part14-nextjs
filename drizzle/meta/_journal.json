@@ -8,6 +8,41 @@
       "when": 1778854864536,
       "tag": "0000_clammy_aqueduct",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1779097612998,
+      "tag": "0001_white_stepford_cuckoos",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1779097844730,
+      "tag": "0002_hesitant_madripoor",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1779111475677,
+      "tag": "0003_furry_jack_power",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1779303924848,
+      "tag": "0004_stormy_rogue",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1779350141297,
+      "tag": "0005_nebulous_echo",
+      "breakpoints": true
     }
   ]
 }

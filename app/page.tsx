@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <h1>hello next.js</h1>
+    <h2 className="text-2xl font-bold mb-4">Homepage</h2>
   )
 }
 export default Home
