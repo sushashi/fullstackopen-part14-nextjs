@@ -54,6 +54,7 @@ jobs:
 
       - name: Run Playwright tests
         run: npx playwright test
+        env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
 
