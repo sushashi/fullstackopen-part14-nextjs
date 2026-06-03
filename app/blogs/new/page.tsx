@@ -1,28 +1,28 @@
-"use client"
+"use client";
 
-import { useActionState, useEffect } from "react"
-import { createBlog } from "@/app/actions/blogs"
-import { useNotification } from "@/app/components/NotificationContext"
-import { useRouter } from "next/navigation"
-import BlogFromInput from "./BlogFormInput"
+import { useActionState, useEffect } from "react";
+import { createBlog } from "@/app/actions/blogs";
+import { useNotification } from "@/app/components/NotificationContext";
+import { useRouter } from "next/navigation";
+import BlogFromInput from "./BlogFormInput";
 
 const NewBlog = () => {
-  
-  const [state, formAction] = useActionState(createBlog, { 
+
+  const [state, formAction] = useActionState(createBlog, {
     errors: {},
     values: { title: "", author: "", url: "" },
     success: false
-  })
+  });
 
-  const { showNotification } = useNotification()
-  const router = useRouter()
+  const { showNotification } = useNotification();
+  const router = useRouter();
 
   useEffect(() => {
     if (state.success) {
-      showNotification("Blog created!")
-      router.push("/blogs")
+      showNotification("Blog created!");
+      router.push("/blogs");
     }
-  },[state, showNotification, router])
+  },[state, showNotification, router]);
 
   return (
     <div>
@@ -34,7 +34,7 @@ const NewBlog = () => {
         <button className="btn" type="submit" data-testid="create-blog-button">Create</button>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default NewBlog
+export default NewBlog;

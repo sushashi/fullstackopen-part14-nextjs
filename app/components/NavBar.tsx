@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { useSession, signOut } from "next-auth/react"
-import NavLink from "./NavLink"
+import { useSession, signOut } from "next-auth/react";
+import NavLink from "./NavLink";
 
 export default function NavBar() {
-  const { data: session } = useSession()
+  const { data: session } = useSession();
 
   return (
     <nav className="fixed w-full rounded-md bg-blue-800 text-white px-6 py-3 flex items-center gap-4">
@@ -19,7 +19,7 @@ export default function NavBar() {
           {" | "}
           <em>{session.user?.name} <span className="text-xs">logged in</span></em>{" "}
           <button className="btn text-sm"
-          onClick={() => signOut()}>
+            onClick={() => signOut()}>
             logout</button>
         </>
       ) : (
@@ -30,5 +30,5 @@ export default function NavBar() {
         </>
       )}
     </nav>
-  )
+  );
 }

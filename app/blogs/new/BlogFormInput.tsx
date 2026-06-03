@@ -1,6 +1,6 @@
 type StatePropsBlogs = {
-    errors: Record<string, string>, 
-    values: {title: string, author: string, url: string} 
+    errors: Record<string, string>,
+    values: {title: string, author: string, url: string}
 }
 
 type FormInputProps = {
@@ -24,8 +24,8 @@ const FormInput = ( {state, type, id, name , label}: FormInputProps ) => {
         required
       />
       <p className="text-red-500 text-xs italic">{state.errors[name] || "" }</p>
-  </div>
-  )
-}
+    </div>
+  );
+};
 
-export default FormInput
+export default FormInput;

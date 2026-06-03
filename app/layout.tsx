@@ -1,4 +1,4 @@
-import "./globals.css"
+import "./globals.css";
 import AuthSessionProvider from "./components/SessionProvider";
 import NavBar from "./components/NavBar";
 import { NotificationProvider } from "./components/NotificationContext";
@@ -17,7 +17,7 @@ export default function RootLayout({
         <AuthSessionProvider>
           <NotificationProvider>
             <NavBar />
-            <div className="max-w-xl mx-auto p-6 pt-20">
+            <div className="max-w-2xl mx-auto p-6 pt-20">
               <Notification />
               {children}
             </div>

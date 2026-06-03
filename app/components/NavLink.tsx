@@ -11,7 +11,7 @@ const NavLink = ({ href, children }: NavLinkProps) => {
     <Link href={href} className="hover:text-blue-400">
       {children}
     </Link>
-  )
-}
+  );
+};
 
-export default NavLink
+export default NavLink;

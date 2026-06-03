@@ -50,14 +50,12 @@ jobs:
       - name: Run database migrations
         run: npx drizzle-kit push
         env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          NODE_ENV: test
 
       - name: Run Playwright tests
         run: npx playwright test
         env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-          NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
-
+          NODE_ENV: test
 
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
