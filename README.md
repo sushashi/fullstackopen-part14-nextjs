@@ -5,7 +5,7 @@ This repository contains my personal solutions to the exercises from the [Full S
 - [Course material](https://courses.mooc.fi/org/uh-cs/courses/full-stack-open-nextjs)
 - Course syllabus
 
-The end result is deployed on Vercel and is available at: [bloglist-app-indol.vercel.app](bloglist-app-indol.vercel.app)
+The end result is deployed on Vercel and is available at: [bloglist-app-indol.vercel.app](https://bloglist-app-indol.vercel.app)
 
 
 ## Local deployment in dev env
